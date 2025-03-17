@@ -1,7 +1,13 @@
-public class Funcionario extends Gerente{
+public class Funcionario{
     private String nome;
     private String cpf;
     private double salario;
+
+    public Funcionario(){
+        setCpf(null);
+        setNome(null);
+        setSalario(0);
+    }
 
     public Funcionario(String nome, String cpf, double salario){
         setCpf(cpf);
