@@ -1,5 +1,8 @@
 public class Main{
     public static void main(String[] args) {
-        System.out.println();
+        Shinobi Naruto = new Shinobi("Naruto", "Folha", 17);
+        Uchiha Sasuke = new Uchiha("Sasuke", "Folha", 17, true, true, 3);
+
+        Sasuke.SharinganAtivado();
     }
 }
