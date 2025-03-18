@@ -4,5 +4,6 @@ public class Main{
         Uchiha Sasuke = new Uchiha("Sasuke", "Folha", 17, true, true, 3);
 
         Sasuke.SharinganAtivado();
+        System.out.println(Naruto.getName());
     }
 }
