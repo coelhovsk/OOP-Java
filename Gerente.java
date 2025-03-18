@@ -2,14 +2,15 @@ public class Gerente extends Funcionario {
     int senha;
     int numeroDeFuncionariosGerenciados;
 
-    public Gerente(){
+    public Gerente(int senha, int numeroDeFuncionariosGerenciados){
         super();
-        setSenha(0);
-        setNumeroDeFuncionariosGerenciados(0);
+        setSenha(senha);
+        setNumeroDeFuncionariosGerenciados(numeroDeFuncionariosGerenciados);
     }
     public Gerente(String nome, String cpf, double salario, int senha, int numeroDeFuncionariosGerenciados){
         super(nome, cpf, salario);
-
+        setSenha(senha);
+        setNumeroDeFuncionariosGerenciados(numeroDeFuncionariosGerenciados);
     }
 
     public void setNumeroDeFuncionariosGerenciados(int numeroDeFuncionariosGerenciados) {
@@ -25,9 +26,7 @@ public class Gerente extends Funcionario {
         return senha;
     }
     public boolean authentication(int passw){
-        if (passw == senha){
-            return true;
-        }
+        if (passw == senha) return true;
         return false;
     }
 }
